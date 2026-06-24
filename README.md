@@ -1,4 +1,4 @@
-Link do <a href="https://icei-puc-minas-pmv-ads.github.io/pmv-ads-2026-1-e1-Clarimed/codigo-fonte/home/home.html" targettarget="_blank" rel="external">repositorio oficial na PUC Minas</a>
+Link do <a href="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2026-1-e1-Clarimed" targettarget="_blank" rel="external">repositorio oficial na PUC Minas</a>
 
 # Gestão de medicamentos 
 
