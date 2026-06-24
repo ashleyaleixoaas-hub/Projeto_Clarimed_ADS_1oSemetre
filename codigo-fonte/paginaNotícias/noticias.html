@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notícias - Clarimed</title>
+    <link rel="icon" type="image/png" href="../../documentos/img/coração-clarimed (4).png">
+    <link rel="stylesheet" href="noticias.css">
+    <link rel="icon" type="image/png" href="../img/coração-clarimed (4).png">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Orbitron:wght@400..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <img alt="logo Clarimed" src="../imagens/logo_Clarimed.png" />
+    </header>
+    <div class="titulo-btn">
+        <a href="../home/home.html" class="btn-voltar">
+            <img alt="seta voltar" src="../imagens/seta_voltar.png">
+        </a>
+        <h1>Notícias</h1>
+    </div>
+    <!-- Carrossel maior -->
+    <section class="carrossel-container" id="carrossel-principal">
+        <button class="seta esq btn-prev">&#10094;</button>
+        <div class="banner-wrapper" id="wrapper-principal"></div>
+        <button class="seta dir btn-next">&#10095;</button>
+        <!-- pontos de localização entre os slides princicpais -->
+        <div>
+            <div class="pontinhos" id="dots-container">
+                <span class="ponto ativo"></span>
+                <span class="ponto"></span>
+            </div>
+    </section>
+
+    <!-- Carrosseis menores-->
+    <div class="grid-carrossel">
+
+        <!-- primeiro -->
+        <section class="carrossel-container" id="carrossel-1">
+            <button class="seta esq btn-prev">&#10094;</button>
+            <div class="banner-wrapper" id="wrapper-1"></div>
+            <button class="seta dir btn-next">&#10095;</button>
+        </section>
+
+        <!-- Segundo -->
+        <section class="carrossel-container" id="carrossel-2">
+            <button class="seta esq btn-prev">&#10094;</button>
+            <div class="banner-wrapper" id="wrapper-2"></div>
+            <button class="seta dir btn-next">&#10095;</button>
+        </section>
+
+        <!-- Terceiro -->
+        <section class="carrossel-container" id="carrossel-3">
+            <button class="seta esq btn-prev">&#10094;</button>
+            <div class="banner-wrapper" id="wrapper-3"></div>
+            <button class="seta dir btn-next">&#10095;</button>
+        </section>
+
+        <!-- Quarto -->
+        <section class="carrossel-container" id="carrossel-4">
+            <button class="seta esq btn-prev">&#10094;</button>
+            <div class="banner-wrapper" id="wrapper-4"></div>
+            <button class="seta dir btn-next">&#10095;</button>
+        </section>
+    </div>
+
+    <!-- botão voltar -->
+    <section>
+        <div class="botao">
+            <a href="../home/home.html">Voltar à página principal</a>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer> &copy; Todos os direitos reservados - 2026 </footer>
+
+    <!-- chamando o JS -->
+    <script src="noticias.js" defer></script>
+</body>

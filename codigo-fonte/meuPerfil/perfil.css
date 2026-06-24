@@ -1,0 +1,80 @@
+.favoritos img {
+    width: 45px;
+}
+
+section h2 {
+    margin: 0 0 8px 50px;
+    font-size: 30px;
+}
+
+.dados {
+    background-color: #bdddfc;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.dados img {
+    width: 200px;
+}
+
+.dados p {
+    margin: 5px 0 5px 0;
+    font-size: 18px;
+}
+
+.container {
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.container h2 {
+    margin-top: 20px;
+    font-size: 25px;
+}
+
+.titulo {
+    width: 400px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+}
+
+.favoritos {
+    display: flex;
+    margin: 10px;
+    border: 1px solid #333;
+    border-radius: 10px;
+    width: 550px;
+    padding: 15px 10px 15px 0;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.foto-nome {
+    display: flex;
+    align-items: center;
+}
+
+@media (max-width: 768px) {
+    .dados {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .dados img {
+        width: 150px;
+    }
+
+    .titulo, .favoritos {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    section h2 {
+        margin-left: 20px;
+    }
+}

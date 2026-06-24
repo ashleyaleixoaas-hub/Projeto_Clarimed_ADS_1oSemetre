@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Clarimed</title>
+    <link rel="stylesheet" href="login.css">
+    <link rel="icon" type="image/png" href="../../documentos/img/coração-clarimed (4).png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <img src="../imagens/logo_Clarimed.png" alt="logo clarimed" />
+    </header>
+    <section class="subtitulo">
+        <h3>Seu dominio sobre medicamentos começa aqui</h3>
+    </section>
+    <section class="container">
+        <form>
+            <h1>Login</h1>
+            <div class="formulario">
+                <label for="telefone">Telefone:</label>
+                <input type="text" id="telefone" placeholder="insira aqui seu número de telefone" required>
+            </div>
+            <div class="formulario">
+                <label for="senha">Senha:</label>
+                <div class="senha-container">
+                    <input type="password" id="senha" placeholder="Insira aqui sua senha" required>
+                    <i class="fa-regular fa-eye" id="togglePassword"></i>
+                </div>
+            </div>
+            <div class="esqueci-minha-senha">
+                <a href="../home/home.html">Esqueci minha senha</a>
+                <div class="checkbox">
+                    <input type="checkbox" id="check">
+                    <label for="check">Lembrar de mim</label>
+                </div>
+            </div>
+            <button type="submit">Entrar</button>
+            <hr class="divisor">
+            <section class="imagens">
+                <img src="../imagens/remedios_esquerda (1).png" alt="caixa de comprimidos">
+                <img src="../imagens/remedios_direita (1).png" alt="caixa de comprimdos">
+            </section>
+            <h2>Ainda não tem cadastro? CADASTRE-SE AQUI!</h2>
+            <a class="buto" href="../cadastro2/cadastro2.html" >Cadastro</a>
+        </form> 
+    </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-masker/1.1.0/vanilla-masker.min.js"></script>
+    <script src="login.js"></script>
+</body>
+
+</html>

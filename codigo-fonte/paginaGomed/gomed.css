@@ -1,0 +1,242 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Bree Serif", serif;
+    font-weight: 400;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* ── CABEÇALHO ── */
+header {
+    background-color: #bdddfc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+}
+
+header img {
+    width: 150px;
+    height: auto;
+}
+
+.titulo-btn {
+    display: flex;
+    margin: 10px 10px;
+    text-align: center;
+}
+
+.titulo-btn h1 {
+    font-size: 25px;
+    font-weight: 400;
+}
+
+.titulo-btn h1:hover {
+    text-decoration: underline;
+}
+
+.btn-voltar img {
+    width: 70px;
+    margin-right: 6px;
+}
+
+.btn-voltar img:hover {
+    transform: translateX(-5px);
+    transition: transform 0.6 ease;
+}
+
+.botao {
+    margin: 50px 0 20px 30px;
+}
+
+.botao a {
+    width: 200px;
+    padding: 10px;
+    border: 1px solid #bdddfc;
+    background: linear-gradient(to right,
+            #5adbe4 0%,
+            #0350af98 50%,
+            #5adbe4 100%);
+    border-radius: 15px;
+    font-size: 15px;
+    background-size: 200% auto;
+    transition: background-position 0.5s ease;
+    text-decoration: none;
+    color: #333;
+}
+
+.botao a:hover {
+    cursor: pointer;
+    background-position: right center;
+    border-color: #333;
+}
+
+/* ── PRINCIPAL ── */
+main {
+    flex: 1;
+    padding: 15px;
+    max-width: 960px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* ── VOLTAR ── */
+.back-row {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 25px;
+    padding-left: 10px;
+    /* controla distância da borda */
+}
+
+.back-arrow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 25px;
+    height: 28px;
+    cursor: pointer;
+}
+
+.page-title {
+    font-size: 20px;
+    font-weight: 700;
+    color: #0b0c0d;
+    text-decoration: underline;
+    letter-spacing: 0.3px;
+}
+
+/* ── LINHA DE CARTÕES ── */
+.cards-row {
+    display: flex;
+    gap: 18px;
+    margin-bottom: 36px;
+    margin-top: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.action-card {
+    flex: 1;
+    min-width: 160px;
+    max-width: 280px;
+    background: linear-gradient(to right, 
+        rgba(237, 236, 245, 0.2) 0%, 
+        rgba(37, 117, 252, 0.2) 100%);;
+    border: 1.5px solid #1a1e21;
+    border-radius: 8px;
+    padding: 20px 16px 18px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    cursor: pointer;
+    transition: transform 0.15s ease, box-shadow 0.15s ease, background 0.15s ease;
+    min-height: 190px;
+    user-select: none;
+}
+
+.action-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 18px rgba(10, 14, 17, 0.18);
+}
+
+.action-card:active {
+    transform: translateY(0);
+    box-shadow: none;
+}
+
+.card-icon-wrap {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-icon-wrap svg,
+.card-icon-wrap img {
+    width: 72px;
+    height: 72px;
+}
+
+.card-label {
+    font-size: 17px;
+    font-weight: 400;
+    color: #0c1216;
+    text-align: center;
+    margin-top: 14px;
+    line-height: 1.4;
+}
+
+
+
+/* ── NOTIFICAÇÃO ── */
+#toast {
+    position: fixed;
+    bottom: 28px;
+    left: 50%;
+    transform: translateX(-50%) translateY(80px);
+    background: #1a6fa8;
+    color: #fff;
+    padding: 11px 22px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 500;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    opacity: 0;
+    pointer-events: none;
+    z-index: 999;
+    white-space: nowrap;
+}
+
+#toast.show {
+    transform: translateX(-50%) translateY(0);
+    opacity: 1;
+}
+
+/* ── RODAPÉ ── */
+footer {
+    background-color: #bdddfc;
+    padding: 5px;
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    margin-top: auto;
+}
+
+@media (max-width: 600px) {
+    main {
+        padding: 20px 16px 32px;
+    }
+
+    .cards-row {
+        gap: 10px;
+    }
+
+    .action-card {
+        min-width: 120px;
+        padding: 18px 10px 14px;
+        min-height: 150px;
+    }
+
+    .card-icon-wrap svg {
+        width: 52px;
+        height: 52px;
+    }
+}

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro - Clarimed</title>
+    <link rel="stylesheet" href="cadastro2.css">
+    <link rel="icon" type="image/png" href="../../documentos/img/coração-clarimed (4).png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <img src="../imagens/logo_Clarimed.png" alt="logo clarimed" />
+    </header>
+    <section class="subtitulo">
+        <h3>Seu domínio sobre medicamentos começa aqui</h3>
+    </section>
+    <section class="container">
+        <form id="formCadastro">
+            <h1>Cadastro</h1>
+            <div class="formulario">
+                <label for="nome">Nome completo:</label>
+                <input type="text" id="nome" placeholder="Insira aqui seu nome completo" required>
+            </div>
+            <div class="formulario">
+                <label>Sexo:</label>
+                <div class="radio-group">
+                    <input type="radio" name="sexo" id="masculino" value="M">
+                    <label for="masculino">Masculino</label>
+                    <input type="radio" name="sexo" id="feminino" value="F">
+                    <label for="feminino">Feminino</label>
+                </div>
+            </div>
+            <div class="formulario">
+                <label for="dataNascimento">Data de nascimento:</label>
+                <input type="text" id="dataNascimento" placeholder="dd/mm/aaaa">
+            </div>
+            <div class="formulario">
+                <label for="telefone">Telefone:</label>
+                <input type="text" id="telefone" placeholder="(xx) xxxxx-xxxx">
+            </div>
+            <div class="formulario">
+                <label for="senha">Senha:</label>
+                <div class="senha-container">
+                    <input type="password" id="senha" placeholder="Insira aqui sua senha">
+                    <i class="fa-regular fa-eye togglePassword"></i>
+                </div>
+                <div id="mensagem-feedback" style="font-size: 13px; margin-top: 5px; font-weight: bold;"></div>
+            </div>
+            <div class="formulario">
+                <label for="confirmaSenha">Confirmação de senha:</label>
+                <div class="senha-container">
+                    <input type="password" id="confirmaSenha" placeholder="Confirme sua senha">
+                    <i class="fa-regular fa-eye togglePassword"></i>
+                </div>
+            </div>
+            <button type="submit">Cadastrar-se</button>
+            <hr class="divisor">
+            <h2>Já possui uma conta? Faça login aqui!</h2>
+            <a class="buto" href="../login/login.html">Login</a>
+        </form>
+    </section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-masker/1.1.0/vanilla-masker.min.js"></script>
+    <script src="cadastro2.js"></script>
+</body>
+</html>

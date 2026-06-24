@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medicamentos</title>
+    <link rel="icon" type="image/png" href="../../documentos/img/coração-clarimed (4).png">
+    <link rel="stylesheet" href="../layout/global.css">
+    <link rel="stylesheet" href="medicamentos.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+        <img alt="logo Clarimed" src="../imagens/logo_Clarimed.png" />
+    </header>
+    <div class="titulo-btn">
+        <a href="../home/home.html" class="btn-voltar">
+            <img alt="seta voltar" src="../imagens/seta_voltar.png">
+        </a>
+        <h1>Guia de medicamentos</h1>
+    </div>
+
+    <div class="container">
+        <div id="busca">
+            <input type="text" id="campoBusca" placeholder="Buscar medicamento...">
+            <button onclick="buscar()">Buscar</button>
+        </div>
+
+        <div id="filtros">
+            <button onclick="filtrar('Todos')">Todos</button>
+            <button onclick="filtrar('Digestivo')">Digestivo</button>
+            <button onclick="filtrar('Dor')">Dor</button>
+            <button onclick="filtrar('Febre')">Febre</button>
+            <button onclick="filtrar('Náusea')">Náusea</button>
+            <button onclick="filtrar('Cansaço')">Cansaço</button>
+        </div>
+
+        <div id="lista"></div>
+        <div class="text-align">
+            <button onclick="mudarPagina(-1)">Anterior</button>
+            <button onclick="mudarPagina(1)">Próxima</button>
+        </div>
+    </div>
+    <footer>
+        &copy; Todos os direitos reservados - 2026
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="gestao.js"></script>
+
+</body>
+
+<div id="modal-dinamico" class="info" style="display:none; z-index: 9999;"></div>
+
+</html>

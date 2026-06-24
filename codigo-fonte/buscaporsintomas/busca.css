@@ -1,0 +1,109 @@
+section .container {
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+ul li {
+    list-style: none;
+}
+
+.btn-sintoma {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 500px;
+    padding: 15px;
+    background: linear-gradient(to right, 
+        rgba(237, 236, 245, 0.2) 0%, 
+        rgba(37, 117, 252, 0.2) 100%);
+    border: 1px solid #333;
+    border-radius: 8px;
+    margin-top: 15px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.icone-mais {
+    font-size: 32px;
+    line-height: 0;
+    color: #333;
+    display: flex;
+    align-items: center;
+}
+
+.btn-sintoma:hover .icone-mais {
+    transform: rotate(90deg);
+    transition: transform 0.3s ease;
+}
+
+.sintomas {
+    padding: 20px;
+    border: 1px solid #333;
+    border-radius: 10px;
+    margin: 20px 50px;
+    background: linear-gradient(to right, 
+        rgba(237, 236, 245, 0.2) 0%, 
+        rgba(37, 117, 252, 0.2) 100%);
+    display: none;
+    opacity: 0;
+    transform: translateY(-15px);
+}
+
+.sintomas.ativo {
+    display: flex;
+    flex-direction: column;
+    animation: abrirSuave 0.4s ease-out forwards;
+}
+
+@keyframes abrirSuave {
+    0% {
+        opacity: 0;
+        transform: translateY(-15px);
+    } 100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.sintomas h2 {
+    padding: 10px;
+    margin-bottom: 10px;
+} 
+
+.recomendacao {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.texto h3 {
+    margin-bottom: 15px;
+    text-decoration: underline;
+    font-size: 20px;
+}
+
+.rodape-busca {
+    margin-top: 30px;
+    text-align: right;
+    width: 100%;
+    font-size: 13px;
+}
+
+@media (max-width: 768px) {
+    .sintomas {
+        margin: 20px 10px;
+    }
+
+    .btn-sintoma {
+        width: 100%;
+    }
+
+    .recomendacao {
+        flex-direction: column;
+        text-align: center;
+    }
+}

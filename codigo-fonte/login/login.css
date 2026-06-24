@@ -1,0 +1,235 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Bree Serif", serif;
+    font-weight: 400;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header img {
+    width: 170px;
+    height: auto;
+}
+
+header {
+    background-color: #bdddfc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 70px;
+}
+
+.buto {
+    width: 300px;
+    display: block;
+    margin: 0 auto 15px auto;
+    padding: 4px;
+    font-size: 25px;
+    border: 1px solid #333;
+    border-radius: 10px;
+    background: linear-gradient(
+    to right,
+    #5adbe4 0%,
+    #0350af98 50%,
+    #5adbe4 100%);
+    background-size: 200% auto;
+    transition: background-position 0.5s ease;
+    text-decoration: none;
+    color: #000; 
+    text-align: center;
+}
+
+.buto:hover {
+    cursor: pointer;
+    background-position: right center;
+    border-color: #333;
+}
+
+.subtitulo {
+    background-color: #88bdf2;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+}
+
+section img {
+    width: 50px;
+}
+
+.container {
+    max-width: 1280px;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #333;
+    border-radius: 18px;
+    padding: 25px 45px;
+    width: 460px;
+}
+
+form h1 {
+    display: block;
+    width: fit-content;
+    margin: 0 auto 30px auto;
+    background-color: #88bdf2;
+    padding: 3px 20px;
+    border-radius: 30px;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+.formulario label {
+    margin: 0 0 3px 10px;
+}
+
+.formulario input {
+    padding: 13px 10px;
+    border-radius: 10px;
+    border: 1px solid #333;
+}
+
+.esqueci-minha-senha {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 20px 20px 20px;
+    font-size: 13px;
+    align-items: center;
+}
+
+.esqueci-minha-senha a {
+    color: #037af1;
+}
+
+.esqueci-minha-senha label {
+    margin-left: 3px;
+}
+
+button {
+    width: 300px;
+    display: block;
+    margin: 0 auto 15px auto;
+    padding: 4px;
+    font-size: 25px;
+    border: 1px solid #333;
+    border-radius: 10px;
+    background: linear-gradient(
+    to right,
+    #5adbe4 0%,
+    #0350af98 50%,
+    #5adbe4 100%);
+    background-size: 200% auto;
+    transition: background-position 0.5s ease;
+}
+
+button:hover {
+    cursor: pointer;
+    background-position: right center;
+    border-color: #333;
+}
+
+.divisor {
+    width: 300px;
+    display: block;
+    margin: 10px auto;
+}
+
+section img {
+    width: 100px;
+}
+
+.imagens {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 10px;
+}
+
+section h2 {
+    font-size: 18px;
+    display: block;
+    margin: 10px auto 15px auto;
+}
+
+.senha-container {
+    position: relative;
+    width: 100%;
+    display: flex;
+}
+
+.senha-container input {
+    width: 100%;
+    padding-right: 40px;
+}
+
+#togglePassword {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: #333;
+    font-size: 16px;
+    z-index: 10;
+}
+
+@media (max-width: 768px) {
+    .subtitulo {
+        text-align: center;
+        padding: 10px;
+    }
+
+    .container {
+        padding: 40px 15px;
+    }
+
+    form {
+        width: 90%; 
+        max-width: 400px;
+        padding: 25px 20px;
+        margin: 20px auto;
+    }
+
+    form h1 {
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+
+    button, .buto, .divisor {
+        width: 100%; 
+    }
+
+    .esqueci-minha-senha {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;    
+        margin: 0 0 20px 0;
+        width: 100%;
+    }
+
+    section h2 {
+        font-size: 14px;
+        text-align: center;
+        margin: 15px 0;
+    }
+
+    .imagens img {
+        width: 70px;
+    }
+}

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clarimed - seus medicamentos em um só lugar</title>
+    <link rel="icon" type="image/png" href="../../documentos/img/coração-clarimed (4).png">
+    <link rel="stylesheet" href="home.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <img alt="logo Clarimed" src="../imagens/logo_Clarimed.png" />
+    </header>
+    <section class="topo">
+        <div class="img-nome" id="bloco-usuario" style="display: none;">
+            <img src="../imagens/Perfil.png" alt="imagem de perfil" />
+            <p id="nome-usuario-home"></p>
+        </div>
+        
+        <button id="menu-btn" class="menu-hamburguer">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+
+        <ul id="menu-lista">
+            <li><a href="../meuPerfil/perfil.html" id="btn-perfil">Meu perfil</a></li>
+            <li><a href="../login/login.html" id="btn-auth">Entrar</a></li>
+            <li><a href="https://api.whatsapp.com/send/?phone=5511961392237&text=Olá%2C+preciso+de+suporte.&type=phone_number&app_absent=0&utm_source=chatgpt.com">Suporte Clarimed</a></li>
+        </ul>
+    </section>
+    <section class="container">
+        <h1 class="destaque">Destaque</h1>
+        <div class="cards">
+            <ul>
+                <li>
+                    <a href="../guiaDeMedicamentos/gestao.html" class="card">
+                        <img src="../imagens/guia-de-medicamentos.png" alt="imagem de uma pilula">
+                        <p>Guia de medicamentos</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="../buscaporsintomas/busca.html" class="card">
+                        <img src="../imagens/busca-por-sintomas.png" alt="Imagem de prancheta medica">
+                        <p>Busca por sintomas</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="../paginaRemediosDoses/doses.html" class="card" id="btn-doses">
+                        <img src="../imagens/meus-remedios-e-doses.png" alt="Imagem de uma cartela de comprimidos">
+                        <p>Meus rémedios e doses</p>
+                    </a>
+                </li>
+                <li><a href="../paginaDuvidas/duvidas.html" class="card">
+                        <img src="../imagens/duvidas-frequentes.png" alt="Imagem de uma maleta medica">
+                        <p>Dúvidas frequentes</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="../paginaGomed/gomed.html" class="card">
+                        <img src="../imagens/go-med.png" alt="Imagem de um mapa">
+                        <p>GO - MED</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="../paginaNotícias/noticias.html" class="card">
+                        <img src="../imagens/noticias (1).png" alt="Imagem de um jornal">
+                        <p>Noticias</p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <hr class="divisor">
+        <section id="boas-vindas-visitante" class="container"
+            style="text-align: center; margin-top: 40px; padding: 20px;">
+            <h2 style="font-size: 24px; margin-bottom: 10px;">Sua saúde em primeiro lugar!</h2>
+            <p style="color: #666; margin-bottom: 20px;">Crie sua conta agora mesmo para liberar o gerenciamento total
+                de seus remédios e doses.</p>
+            <div class="botao" style="margin: 0 auto; width: max-content;">
+                <a class="btn-visitante" href="../cadastro2/cadastro2.html">Criar Conta!</a>
+            </div>
+        </section>
+        <h1 class="recentes-titulo" id="titulo-recentes">Recentes</h1>
+        <section class="notificacao" id="secao-notificacao">
+            <div class="recentes">
+                <div class="recente-cada">
+                    <img class="sino" src="../imagens/sino.png" alt="Imagem de um sino" />
+                    <div class="card-recentes">
+                        <p id="tempo-cadastro">Há 6 min</p>
+                        <h2>Parabéns!! <img class="coracao" src="../imagens/coracao-clarimed.png" alt="Coração Clarimed">Você
+                            criou sua conta.</h2>
+                    </div> 
+                </div>
+                <div class="recente-cada">
+                    <img class="sino" src="../imagens/sino.png" alt="Imagem de um sino" />
+                    <div class="card-recentes">
+                        <p>Há 2 min</p>
+                        <h2>Parabéns!! <img class="coracao" src="../imagens/coracao-clarimed.png" alt="Coração Clarimed">Você
+                            completou seu perfil.</h2>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+    <footer>
+        &copy; Todos os direitos reservados - 2026
+    </footer>
+    <script src="home.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+
+</html>

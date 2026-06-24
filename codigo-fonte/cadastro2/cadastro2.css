@@ -1,0 +1,188 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Bree Serif", serif;
+    font-weight: 400;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    overflow: hidden; 
+    background-color: #fff;
+}
+
+header {
+    background-color: #bdddfc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60px;
+    flex-shrink: 0;
+}
+
+header img {
+    width: 150px;
+}
+
+.subtitulo {
+    background-color: #88bdf2;
+    padding: 4px;
+    text-align: center;
+    flex-shrink: 0;
+}
+
+.subtitulo h3 {
+    font-size: 14px;
+}
+
+.container {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #333;
+    border-radius: 18px;
+    padding: 15px 40px;
+    width: 450px;
+}
+
+form h1 {
+    display: block;
+    width: fit-content;
+    margin: 0 auto 15px auto;
+    background-color: #88bdf2;
+    padding: 2px 25px;
+    border-radius: 30px;
+    font-size: 22px;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 8px;
+}
+
+.formulario label {
+    margin: 0 0 2px 10px;
+    font-size: 14px;
+}
+
+.formulario input {
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #333;
+    width: 100%; 
+}
+
+.radio-group {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-left: 10px;
+}
+
+.radio-group input[type="radio"] {
+    width: 16px;
+    height: 16px;
+    margin-right: 5px;
+}
+
+.radio-group label {
+    margin: 0 15px 0 0;
+    font-size: 14px;
+}
+
+.senha-container {
+    position: relative;
+    width: 100%;
+    display: flex; 
+}
+
+.senha-container input {
+    padding-right: 40px;
+}
+
+#togglePassword, .togglePassword {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: #333;
+    font-size: 16px;
+}
+
+button, .buto {
+    width: 280px;
+    display: block;
+    margin: 5px auto;
+    padding: 6px;
+    font-size: 20px;
+    border: 1px solid #333;
+    border-radius: 10px;
+    text-align: center;
+    text-decoration: none;
+    color: #000;
+    background: linear-gradient(to right, #5adbe4, #0350af98, #5adbe4);
+    background-size: 200% auto;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.buto:hover, button:hover {
+    background-position: right center;
+}
+
+.divisor {
+    width: 100%;
+    margin: 10px 0;
+    border: 0;
+    border-top: 1px solid #333;
+}
+
+h2 {
+    font-size: 15px;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+@media (max-width: 768px) {
+    body {
+        height: auto;
+        min-height: 100vh;
+        overflow: auto;
+    }
+
+    .container {
+        padding: 20px 10px; 
+    }
+
+    form {
+        width: 95%; 
+        max-width: 400px;
+        padding: 20px 15px;
+    }
+
+    form h1 {
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
+
+    button, .buto {
+        width: 100%; 
+        font-size: 18px;
+    }
+
+    .radio-group {
+        flex-wrap: wrap;
+    }
+}

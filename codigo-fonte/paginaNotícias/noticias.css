@@ -1,0 +1,149 @@
+@charset "UTF-8";
+@import "../layout/global.css";
+/* import do css padrão da aplicação */
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+h1 {
+    font-size: 30px;
+    margin: 10px 0 0 0px;
+    font-weight: 400;
+}
+
+a {
+  text-decoration: none;
+  color: var(--cor-texto);
+  width: fit-content;
+  padding: 8px;
+}
+
+/* Banner Carrossel */
+.carrossel-container {
+    position: relative;
+    background: #f5f5f5;
+    border: 1px solid #eeeeee;
+    border-radius: 10px;
+    margin-bottom: 25px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.05);
+    margin-top: 50px;
+    margin: 30px;
+}
+
+.banner-wrapper { 
+    display: flex; 
+    overflow: hidden; 
+    border-radius: 10px; 
+}
+
+.slide {
+    display: none; 
+    width: 100%;
+    height: 250px;
+    animation: fadeIn 1.0s ease;
+}
+/* Suavização dos slides */
+@keyframes fadeIn { 
+    from { opacity: 0; } to { opacity: 1; } 
+}
+
+/* Para o slide funcionar */
+.slide.active { 
+    display: flex; 
+}
+
+.slide img { 
+    width: 45%; 
+    height: 100%;
+    object-fit: cover; 
+    display: block; 
+}
+
+/* Texto Container principal */
+.banner-texto {
+    flex: 1; 
+    padding: 15px; 
+    text-align: center; 
+}
+.banner-texto h2 { 
+    font-size: 26px; 
+    margin-bottom: 15px; 
+    color: #222; }
+.banner-texto p { 
+    color: #666; 
+    line-height: 1.6; 
+    font-size: 19px;
+}
+
+/* carrosseis menores */
+.grid-carrossel {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Cria duas colunas com o mesmo tamanho*/
+    gap: 50px; /* Espaço entre os carrosséis */
+    max-width: 2000px;
+    margin: 40px auto;
+    width: 95%;
+    height: fit-content;
+}
+
+/* Textos dentro dos carroseis pequenos */
+.grid-carrossel .banner-texto h2 {
+    font-size: 19px; 
+}
+.grid-carrossel .banner-texto p {
+    font-size: 16px; 
+    color: #666;
+    margin: 0px;
+    line-height: 1.4;
+    display: -webkit-box;
+    line-clamp: 3;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    word-break: break-word;
+}
+
+footer {
+    background-color: #bdddfc;
+    padding: 5px;
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    margin-top: auto;
+}
+
+/* Para deixar o carrossel em colunas abaixo um do outro*/
+@media (max-width: 725px) {
+    .grid-carrossel {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Linkamento dos Carrosseis */
+.link-carrossel {
+    text-decoration: none;
+    color: inherit;
+    display: inline-block; 
+    transition: all 0.5s ease; 
+}
+/* Efeito ao passar o mouse (Hover) */
+.link-carrossel:hover {
+    transform: translateX(7px); /* Dá um leve totó para a direita*/
+}
+
+/* Setas */
+.seta {
+    position: absolute;
+    top: 50%; transform: translateY(-50%);
+    background: white; border: 1px solid #ddd;
+    border-radius: 50%; width: 40px; height: 40px;
+    cursor: pointer; z-index: 10; transition: 0.3s;
+}
+.seta:hover { background: #f0f0f0; }
+.seta.esq { left: -20px; }
+.seta.dir { right: -20px; }
+
+/* pontos embaixo do conteiner principal */
+.pontinhos { position: absolute; bottom: -30px; left: 50%; transform: translateX(-50%); display: flex; gap: 10px; }
+.ponto { width: 10px; height: 10px; background: #ccc; border-radius: 50%; cursor: pointer; }
+.ponto.ativo { background: #333; width: 25px; border-radius: 10px; transition: 0.3s; }

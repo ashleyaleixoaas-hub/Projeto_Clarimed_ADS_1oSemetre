@@ -1,0 +1,28 @@
+message: Please cite this software using these metadata.
+title: Gestão De Medicamentos - Clarimed
+authors: 
+  - family-names: Aleixo
+    given-names: Ashley
+  - family-names: Rodrigues
+    given-names: Felipe 
+  - family-names: Henrique  
+    given-names: Pedro
+  - family-names: Augusto
+    given-names: Pedro
+  - family-names: Gustavo
+    given-names: Luiz
+  - name-suffix: Professor
+    affiliation: PUC Minas
+    family-names: de Paiva Carvalho
+    given-names: Joyce Christina
+
+keywords:
+  - Gestão de medicamentos
+  - Farmácia
+  - Remédios 
+  - Busca por medicamentos 
+  - Farmaceuticos 
+
+repository-code: https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2026-1-e1-Gestao-de-Medicamentos
+version: 1.0.0
+date-released: 2026-06-07

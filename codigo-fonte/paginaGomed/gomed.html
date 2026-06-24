@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="gomed.css">
+  <script src="gomed.js" defer></script>
+  <link rel="stylesheet" href="../layout/global.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Orbitron:wght@400..900&display=swap"
+    rel="stylesheet">
+  <title>Clarimed – GO-MED</title>
+  <link rel="icon" type="image/png" href="../../documentos/img/coração-clarimed (4).png">
+</head>
+
+<body>
+
+  <!-- CABEÇALHO -->
+  <header>
+    <img alt="logo Clarimed" src="../imagens/logo_Clarimed.png" />
+  </header>
+  <div class="titulo-btn">
+    <a href="../home/home.html" class="btn-voltar">
+      <img alt="seta voltar" src="../imagens/seta_voltar.png">
+    </a>
+    <h1>GO - MED</h1>
+  </div>
+  <!-- PRINCIPAL -->
+  <main>
+
+    <!-- Voltar + Título -->
+
+
+    <!-- Action Cards -->
+    <div class="cards-row">
+      <div class="action-card active" id="card-hospital" onclick="abrirMaps('hospitais')">
+        <div class="card-icon-wrap">
+          <!-- SVG Hospital -->
+          <svg viewBox="0 0 72 72" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="10" y="24" width="52" height="42" rx="2" fill="#5a9ec9" opacity=".35" />
+            <rect x="10" y="24" width="52" height="42" rx="2" stroke="#1a6fa8" stroke-width="2.2" fill="none" />
+            <rect x="22" y="38" width="10" height="10" rx="1" fill="none" stroke="#1a6fa8" stroke-width="2" />
+            <rect x="40" y="38" width="10" height="10" rx="1" fill="none" stroke="#1a6fa8" stroke-width="2" />
+            <rect x="28" y="52" width="16" height="14" rx="1" fill="none" stroke="#1a6fa8" stroke-width="2" />
+            <rect x="24" y="10" width="24" height="16" rx="1" fill="#5a9ec9" opacity=".35" stroke="#1a6fa8"
+              stroke-width="2.2" />
+            <line x1="36" y1="13" x2="36" y2="23" stroke="#1a6fa8" stroke-width="2.5" stroke-linecap="round" />
+            <line x1="31" y1="18" x2="41" y2="18" stroke="#1a6fa8" stroke-width="2.5" stroke-linecap="round" />
+            <circle cx="56" cy="9" r="8" fill="#1a6fa8" />
+            <line x1="56" y1="6" x2="56" y2="12" stroke="white" stroke-width="2" stroke-linecap="round" />
+            <line x1="53" y1="9" x2="59" y2="9" stroke="white" stroke-width="2" stroke-linecap="round" />
+          </svg>
+        </div>
+        <span class="card-label">Localizar hospitais</span>
+      </div>
+
+      <div class="action-card" id="card-farmacia" onclick="abrirMaps('farmacias')">
+        <div class="card-icon-wrap">
+          <!-- SVG Medicamento -->
+          <svg viewBox="0 0 72 72" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <ellipse cx="36" cy="36" rx="28" ry="14" transform="rotate(-40 36 36)" fill="none" stroke="#1a6fa8"
+              stroke-width="2.5" />
+            <line x1="14.5" y1="51.5" x2="57.5" y2="20.5" stroke="#1a6fa8" stroke-width="2.5" />
+            <ellipse cx="36" cy="36" rx="28" ry="14" transform="rotate(-40 36 36)" clip-path="url(#pill-left)"
+              fill="#5a9ec9" opacity=".5" />
+            <defs>
+              <clipPath id="pill-left">
+                <polygon points="14,20 57,20 57,52 14,52" />
+              </clipPath>
+            </defs>
+          </svg>
+        </div>
+        <span class="card-label">Localizar Farmácias</span>
+      </div>
+
+      <div class="action-card" id="card-clinica" onclick="abrirMaps('clinicas')">
+        <div class="card-icon-wrap">
+          <!-- SVG Círculo com Cruz -->
+          <svg viewBox="0 0 72 72" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="36" cy="36" r="28" fill="#1a6fa8" />
+            <rect x="29" y="18" width="14" height="36" rx="3" fill="white" />
+            <rect x="18" y="29" width="36" height="14" rx="3" fill="white" />
+          </svg>
+        </div>
+        <span class="card-label">Localizar clínicas</span>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- RODAPÉ -->
+  <footer>
+    &copy; Todos os direitos reservados - 2026
+  </footer>
+
+  <!-- NOTIFICAÇÃO -->
+  <div id="toast"></div>
+
+</body>
+
+</html>

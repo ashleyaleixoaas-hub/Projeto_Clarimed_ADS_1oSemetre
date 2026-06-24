@@ -1,0 +1,89 @@
+/* aqui  o css padrão*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Bree Serif", serif;
+    font-weight: 400;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #bdddfc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+}
+
+header img {
+    width: 150px;
+    height: auto;
+}
+
+.titulo-btn {
+    display: flex;
+    margin: 10px 10px;
+    text-align: center;
+}
+
+.titulo-btn h1 {
+    font-size: 25px;
+    font-weight: 400;
+}
+
+.titulo-btn h1:hover {
+    text-decoration: underline;
+}
+
+.btn-voltar img {
+    width: 70px;
+    margin-right: 6px;
+}
+
+.btn-voltar img:hover {
+    transform: translateX(-5px);
+    transition: transform 0.6 ease;
+}
+
+.botao {
+    margin: 50px 0 20px 30px;
+}
+
+.botao a {
+    width: 200px;
+    padding: 10px;
+    border: 1px solid #bdddfc;
+    background: linear-gradient(
+    to right,
+    #5adbe4 0%,
+    #0350af98 50%,
+    #5adbe4 100%);
+    border-radius: 15px;
+    font-size: 15px;
+    background-size: 200% auto;
+    transition: background-position 0.5s ease;
+    text-decoration: none;
+    color: #333;
+}
+
+.botao a:hover {
+    cursor: pointer;
+    background-position: right center;
+    border-color: #333;
+}
+
+footer {
+    background-color: #bdddfc;
+    padding: 5px;
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    margin-top: auto;
+}
